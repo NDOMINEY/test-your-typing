@@ -60,3 +60,26 @@ html{
     border:5px solid #6E8387;
     border-radius: 5px;
 }
+
+/** Game Space Styling **/
+
+.game-space{
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 25px;
+    height: 70vh;
+    text-align: center;
+    background-color: #A4B8C4;
+    border:5px solid #6E8387;
+    border-radius: 5px;
+}
+
+.randon-letter{
+    font-size: 75px;
+    padding: 25px;
+}
+
+.count-down{
+    font-size: 25px;
+
+}
