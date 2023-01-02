@@ -30,7 +30,7 @@ html{
     border-radius: 5px;
 }
 
-#continue-btn{
+.btn{
     padding: 10px;
 }
 
@@ -43,4 +43,20 @@ html{
     padding-right: 50px;
     font-weight: bold;
     background: radial-gradient(circle, rgba(12,202,74,1) 0%, rgba(164,184,196,1) 100%);
+}
+
+/** Styling for gameselect page **/
+
+.game-mode{
+    display: inline-block;
+    width: 30%;
+    height: 500px;
+    vertical-align: top;
+    margin-left: 13.33%;
+    margin-top: 25px;
+    padding: 5% 25px 0px 25px;
+    text-align: center;
+    background-color: #A4B8C4;
+    border:5px solid #6E8387;
+    border-radius: 5px;
 }
