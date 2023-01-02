@@ -28,3 +28,18 @@ h1{
     border:5px solid #6E8387;
     border-radius: 5px;
 }
+
+#continue-btn{
+    padding: 10px;
+}
+
+#wiki-link{
+    color: black;
+}
+
+#wiki-link:hover{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-weight: bold;
+    background: radial-gradient(circle, rgba(12,202,74,1) 0%, rgba(164,184,196,1) 100%);
+}
