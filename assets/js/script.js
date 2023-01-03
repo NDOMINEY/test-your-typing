@@ -6,12 +6,25 @@ let key = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o",
 //run the game on screen load
 window.onload = runTimedGame();
 
+
+
 /**
  * Runs game cycle
  */
 function runTimedGame(){
     document.getElementsByClassName("randon-letter")[1].innerHTML = randomKey();
+
+    document.addEventListener('keydown', userInput, false); 
+
+    function userInput(event){
+        if(event.type === 'keydown'){
+            let keyPressed = event.key;
+            document.getElementsByClassName("randon-letter")[1].innerHTML = keyPressed;
+        }
+    } 
+    
 }
+
 
 /**
  * Generates random string from the key array
@@ -23,12 +36,22 @@ function randomKey(){
     return key[i];
 }
 
-function checkAnswer(){
-    
+/**
+ * Checks whether key pressed is correct against the generated key challenge
+ */
+function checkAnswer(clicked){
+    if(document.getElementsByClassName("randon-letter")[1].innerHTML === clicked){
+        getElementsByClassName("current-score")[0].innerHTML = "worked";
+    } else {
+        decreaseScore();
+    }
 }
 
 function increaseScore(){
-    
+    let score = getElementsByClassName("current-score")[0];
+    score = score + 1;
+
+    getElementsByClassName("current-score")[0].innerHTML = score;
 }
 
 function decreaseScore(){
