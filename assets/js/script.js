@@ -9,8 +9,6 @@ let seconds = 0;
 let currentScore = document.getElementsByClassName("current-score")[0];
 let startScore = 0;
 
-let keyStroke = 0;
-
 //run the game on screen load
 window.onload = runTimedGame();
 
@@ -73,11 +71,11 @@ function randomKey(){
  */
 function checkAnswer(keyPressed){
 
-    if (document.getElementsByClassName("randon-letter")[1].innerHTML === keyPressed){
+    if (startTime !== 0 && document.getElementsByClassName("randon-letter")[1].innerHTML === keyPressed){
         startScore += 1;
         currentScore.innerHTML = startScore;
         return true;
-    }else{
+    }else if(startTime !== 0 && document.getElementsByClassName("randon-letter")[1].innerHTML !== keyPressed){ 
         startScore -= 1;
         currentScore.innerHTML = startScore;
         return false;
