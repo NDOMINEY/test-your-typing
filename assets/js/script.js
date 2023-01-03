@@ -3,6 +3,10 @@ let key = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o",
 "p","q","r","s","t","u","v","x","w","y","z","0","1","2","3","4","5","6",
 "7","8","9","Tab","Enter","Shift","Delete","Space Bar"];
 
+
+let currentScore = document.getElementsByClassName("current-score")[0];
+let startScore = 0;
+
 //run the game on screen load
 window.onload = runTimedGame();
 
@@ -19,8 +23,11 @@ function runTimedGame(){
     function userInput(event){
         if(event.type === 'keydown'){
             let keyPressed = event.key;
-            document.getElementsByClassName("randon-letter")[1].innerHTML = keyPressed;
+            //document.getElementsByClassName("randon-letter")[1].innerHTML = keyPressed;
+            checkAnswer(keyPressed);
+
         }
+
     } 
     
 }
@@ -39,23 +46,17 @@ function randomKey(){
 /**
  * Checks whether key pressed is correct against the generated key challenge
  */
-function checkAnswer(clicked){
-    if(document.getElementsByClassName("randon-letter")[1].innerHTML === clicked){
-        getElementsByClassName("current-score")[0].innerHTML = "worked";
-    } else {
-        decreaseScore();
+function checkAnswer(keyPressed){
+
+    if (document.getElementsByClassName("randon-letter")[1].innerHTML === keyPressed){
+        startScore += 1;
+        currentScore.innerHTML = startScore;
+        return true;
+    }else{
+        startScore -= 1;
+        currentScore.innerHTML = startScore;
+        return false;
     }
-}
-
-function increaseScore(){
-    let score = getElementsByClassName("current-score")[0];
-    score = score + 1;
-
-    getElementsByClassName("current-score")[0].innerHTML = score;
-}
-
-function decreaseScore(){
-    
 }
 
 function topScore(){
