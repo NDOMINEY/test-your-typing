@@ -19,8 +19,6 @@ window.onload = runTimedGame();
 document.addEventListener('keydown', countDown, {once : true});
 
 function countDown(){
-
-    if(keyStroke = 1){
     setTimeout(function(){
         startTime -= 1;
         timer.innerHTML = startTime;
@@ -29,7 +27,6 @@ function countDown(){
             countDown();             //  ..  again which will trigger another 
           }
     }, 1000);
-    }
 }
 
 /**
@@ -56,6 +53,7 @@ function runTimedGame(){
         
     } while (timer > 0);    
 
+    document.getElementById("reset-btn").addEventListener('click', restartGame, {once : true});
     
 }
 
@@ -88,4 +86,14 @@ function checkAnswer(keyPressed){
 
 function topScore(){
 
+}
+
+function restartGame(){
+    runTimedGame();
+    startTime = 40;
+    seconds = 0;
+    countDown();
+    topScore();
+    startScore = 0;
+    currentScore.innerHTML = 0;
 }
