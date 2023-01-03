@@ -44,15 +44,19 @@ function runTimedGame(){
         function userInput(event){
         
             if(event.type === 'keydown'){
-            let keyPressed = event.key;
-            //document.getElementsByClassName("randon-letter")[1].innerHTML = keyPressed;
-            checkAnswer(keyPressed);
-            document.getElementsByClassName("randon-letter")[1].innerHTML = randomKey();
+                let keyPressed = event.key;
+                checkAnswer(keyPressed);
+                document.getElementsByClassName("randon-letter")[1].innerHTML = randomKey();
+                
+                if(startTime === 0){
+                    document.getElementsByClassName("randon-letter")[1].innerHTML = "Game Over";
+                }
             }
         }
-
         
     } while (timer > 0);    
+
+    
 }
 
 
