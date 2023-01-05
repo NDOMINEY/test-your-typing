@@ -84,15 +84,20 @@ function randomKey(){
 function checkAnswer(keyPressed){
 
     let answerResponse = document.getElementById("answer_status");
+    let preText = document.getElementById("answer_pretext");
 
     if (startTime !== 0 && document.getElementsByClassName("randon-letter")[1].innerHTML === keyPressed){
         startScore += 1;
         currentScore.innerHTML = startScore;
-        answerResponse.innerHTML = "CORRECT"
+        preText.innerHTML = "Last answer was...";
+        answerResponse.innerHTML = "CORRECT";
+        answerResponse.style.color = 'green';
     }else if(startTime !== 0 && document.getElementsByClassName("randon-letter")[1].innerHTML !== keyPressed){ 
         startScore -= 1;
         currentScore.innerHTML = startScore;
-        answerResponse.innerHTML = "INCORRECT"
+        preText.innerHTML = "Last answer was...";
+        answerResponse.innerHTML = "INCORRECT";
+        answerResponse.style.color = 'red';
 
     }
 
