@@ -1,5 +1,5 @@
 // array for keys to be included in game
-let key = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o",
+const key = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o",
 "p","q","r","s","t","u","v","x","w","y","z","0","1","2","3","4","5","6",
 "7","8","9","Tab","Enter","Shift","Delete","Space Bar"];
 
@@ -9,13 +9,19 @@ let seconds = 0;
 let currentScore = document.getElementsByClassName("current-score")[0];
 let startScore = 0;
 
+
 //run the game on screen load
 window.onload = runTimedGame();
+
+//back to games link added
+document.getElementById("reset-btn").addEventListener('click', function(){
+    window.location.href = 'gameselect.html';
+})
 
 
 /**
  * count down timer
- */
+*/
 document.addEventListener('keydown', countDown, {once : true});
 
 function countDown(){
@@ -31,18 +37,26 @@ function countDown(){
 
 /**
  * Runs game cycle
- */
+*/
 function runTimedGame(){
     document.getElementsByClassName("randon-letter")[1].innerHTML = randomKey();
 
-    do{
-        document.addEventListener('keydown', userInput, false);
+    if(startTime > 0){
+    document.addEventListener('keydown', userInput);
 
         function userInput(event){
         
             if(event.type === 'keydown'){
                 let keyPressed = event.key;
-                checkAnswer(keyPressed);
+                
+                if (startTime !== 0 && document.getElementsByClassName("randon-letter")[1].innerHTML === keyPressed){
+                    startScore += 1;
+                    currentScore.innerHTML = startScore;
+                }else if(startTime !== 0 && document.getElementsByClassName("randon-letter")[1].innerHTML !== keyPressed){ 
+                    startScore -= 1;
+                    currentScore.innerHTML = startScore;
+                }
+
                 document.getElementsByClassName("randon-letter")[1].innerHTML = randomKey();
                 
                 if(startTime === 0){
@@ -50,17 +64,18 @@ function runTimedGame(){
                 }
             }
         }
-        
-    } while (timer > 0);    
-
-    document.getElementById("reset-btn").addEventListener('click', restartGame, {once : true});
     
+    }else{
+        return
+    }
+    
+    return
 }
 
 
 /**
  * Generates random string from the key array
- */
+*/
 function randomKey(){
     //generate random number for key array index
     let i = Math.floor(Math.random() * 42);
@@ -70,30 +85,22 @@ function randomKey(){
 
 /**
  * Checks whether key pressed is correct against the generated key challenge
- */
+*/
+
 function checkAnswer(keyPressed){
 
     if (startTime !== 0 && document.getElementsByClassName("randon-letter")[1].innerHTML === keyPressed){
         startScore += 1;
         currentScore.innerHTML = startScore;
-        return true;
     }else if(startTime !== 0 && document.getElementsByClassName("randon-letter")[1].innerHTML !== keyPressed){ 
         startScore -= 1;
         currentScore.innerHTML = startScore;
-        return false;
     }
+
+    return
 }
+
 
 function topScore(){
 
-}
-
-function restartGame(){
-    runTimedGame();
-    startTime = 40;
-    seconds = 0;
-    countDown();
-    topScore();
-    startScore = 0;
-    currentScore.innerHTML = 0;
 }
