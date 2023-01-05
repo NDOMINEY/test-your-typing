@@ -49,13 +49,7 @@ function runTimedGame(){
             if(event.type === 'keydown'){
                 let keyPressed = event.key;
                 
-                if (startTime !== 0 && document.getElementsByClassName("randon-letter")[1].innerHTML === keyPressed){
-                    startScore += 1;
-                    currentScore.innerHTML = startScore;
-                }else if(startTime !== 0 && document.getElementsByClassName("randon-letter")[1].innerHTML !== keyPressed){ 
-                    startScore -= 1;
-                    currentScore.innerHTML = startScore;
-                }
+                checkAnswer(keyPressed);
 
                 document.getElementsByClassName("randon-letter")[1].innerHTML = randomKey();
                 
@@ -89,12 +83,17 @@ function randomKey(){
 
 function checkAnswer(keyPressed){
 
+    let answerResponse = document.getElementById("answer_status");
+
     if (startTime !== 0 && document.getElementsByClassName("randon-letter")[1].innerHTML === keyPressed){
         startScore += 1;
         currentScore.innerHTML = startScore;
+        answerResponse.innerHTML = "CORRECT"
     }else if(startTime !== 0 && document.getElementsByClassName("randon-letter")[1].innerHTML !== keyPressed){ 
         startScore -= 1;
         currentScore.innerHTML = startScore;
+        answerResponse.innerHTML = "INCORRECT"
+
     }
 
     return
