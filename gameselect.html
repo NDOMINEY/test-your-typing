@@ -14,8 +14,21 @@
         <h1 class="title"><a class="title" href="index.html">TEST YOUR TYPING!</a></h1>
     </header>
 
+    <!-- First section to hold information for timechallenge game -->
     <section class="game-mode">
         <h2>Time Challenge!</h2>
+
+        <table class="table">
+            <tr>
+                <th class="name">Player</th>
+                <th class="score">Highest Score</th>
+            </tr>
+            <tr>
+                <td class="name">-</td> <!-- place holder to receive name for high score -->
+                <td class="score">-</td> <!-- place holder to receive score for high score -->
+            </tr>
+        </table>
+
         <br>
         <p>You will have 40 seconds to score as many points as possible! <br><br>
             A random key will be generated which then you need to click using your
@@ -25,19 +38,24 @@
         <br>
         <button class="btn" id="time-challenge" onclick="window.location.href = 'timechallenge.html';">Let's go!</button>
 
-        <table class="table">
-            <tr>
-                <th>Player</th>
-                <th>High Score</th>
-            </tr>
-            <tr>
-                <td>Name</td>
-                <td>0</td>
-            </tr>
-        </table>
+        
     </section>
+
+    <!-- Second section to hold information for longstreak game -->
     <section class="game-mode">
         <h2>Longest Streak Challenge!</h2>
+
+        <table class="table">
+            <tr>
+                <th class="name">Player</th>
+                <th class="score">Highest Score</th>
+            </tr>
+            <tr>
+                <td class="name">-</td> <!-- place holder to receive name for high score -->
+                <td class="score">-</td> <!-- place holder to receive score for high score -->
+            </tr>
+        </table>
+
         <br>
         <p>In this challenge the goal is to keep going until you click the wrong key! <br><br>
             A random key will be generated which then you need to click using your
@@ -47,16 +65,7 @@
             <br> 
         <button class="btn" id="streak-challenge">Let's go!</button>
 
-        <table class="table">
-            <tr>
-                <th>Player</th>
-                <th>High Score</th>
-            </tr>
-            <tr>
-                <td>Name</td>
-                <td>0</td>
-            </tr>
-        </table>
+        
     </section>
 
 

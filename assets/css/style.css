@@ -82,3 +82,34 @@ html{
 .count-down{
     font-size: 25px;
 }
+
+/* Styling for high scores table */
+
+
+th, td {
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: #C8D3D5;
+  }
+
+.table{
+    width: 100%;
+    margin-top: 25px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#table-header{
+    font-weight: bold;
+}
+
+.name{
+    width: 50%;
+
+}
+
+.score{
+    width: 50%;
+
+}
+
