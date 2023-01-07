@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Game to practice touch typing skills!">
+    <meta name="keywords" content="game, practice, touch, typing">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <title>Test Your Typing!</title>
+
+
+</head>
+<body>
+    <header>
+        <h1 class="title"><a class="title" href="index.html">TEST YOUR TYPING!</a></h1>
+    </header>
+
+    <!-- structure below for game area -->
+
+    <section class="game-space">
+        
+        <h2>Time Challenge!</h2>
+        <br><br>
+        <p>Time will start when click your first key! </p>
+        <br><br>
+        <p class="randon-letter"> ---> <span class="randon-letter"></span> <--- </p>
+        <p id="answer_pretext"></p><p id="answer_status"></p>
+        <br><br>       
+        <p class="count-down">Count Down: <span class="count-down">40</span> seconds</p>
+        <br><br>       
+        <p class="score">Total Score: <span class="current-score">0</span></p>
+        <br><br>
+        <button class="btn" id="reset-btn">Back to games!</button>
+
+
+    </section>
+
+    <!-- structure below for end of game pop up -->
+
+    <div id="pop-up" class="pop-up">
+        <div id="content">
+            <input type='text' id='name' name='name'>
+        </div>
+        <button class="btn" id="submit"></button>
+    </div>
+    
+    <!-- run external javascript for page -->
+    <script src="assets/js/longstreakscript.js"></script>
+</body>
+</html>
