@@ -138,11 +138,10 @@ function topScore(){
     
     let nameRecord = document.getElementById("name"); //user input name in pop-up
     let score = document.getElementsByClassName("current-score")[0]; //total score from game
-    let streakHighScore = {'Natalie': 0}; //create empty array ready to add high score too
+    let streakHighScore = {}; //create empty array ready to add high score too
     let retrievedScore = localStorage.getItem('streakHighScore'); //retrieves the data held in localStorage
     let stringScoreReturn = JSON.parse(retrievedScore); //return string value of localStorage
 
-    localStorage.setItem('streakHighScore', JSON.stringify(streakHighScore));
     console.log(retrievedScore);
 
     //bring pop up into view
