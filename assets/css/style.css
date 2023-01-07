@@ -115,6 +115,7 @@ th{
 /* Styling for end of game pop up */
 
 .pop-up{
+    display: none;
     position: fixed;
     z-index: 1;
     left: 20vw;
