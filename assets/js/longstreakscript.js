@@ -1,7 +1,8 @@
 // array for keys to be included in game
 const key = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o",
 "p","q","r","s","t","u","v","x","w","y","z","0","1","2","3","4","5","6",
-"7","8","9","Tab","Enter","Shift","Delete","Space Bar"];
+"7","8","9","Enter","Shift","Space Bar"];
+
 
 let currentScore = document.getElementsByClassName("current-score")[0];
 let startScore = 0;
@@ -49,7 +50,7 @@ function userInput(event){
 */
 function randomKey(){
     //generate random number for key array index
-    let i = Math.floor(Math.random() * 42);
+    let i = Math.floor(Math.random() * 40);
     //returns random index from the key array
     return key[i];
 }
