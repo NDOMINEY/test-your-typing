@@ -15,7 +15,7 @@ html{
     width: 100%;
     padding: 5vh;
     text-align: center;
-    font-size: 10vh;
+    font-size: 75px;
     color: black;
     text-decoration: none;
 }
@@ -133,3 +133,18 @@ th{
 .pop-up > h2 {
     padding-top: 25px;
 }
+
+/* Media queries */
+
+@media only screen and (max-width: 840px) {
+    .title{
+        font-size: 50px;
+    }
+  }
+
+  @media only screen and (max-width: 605px) {
+    .title{
+        font-size: 25px;
+        padding: 5vh 0 5vh 0;
+    }
+  }
