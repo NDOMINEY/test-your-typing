@@ -174,7 +174,7 @@ th{
 
 /* Media queries */
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 985px) {
     .game-mode{    
         margin-left: 20%;
         margin-right: 20%;
@@ -192,23 +192,39 @@ th{
     #keys {
         width: 75%;
     }
-} 
 
-@media only screen and (max-width: 840px) {
     .title{
         font-size: 50px;
     }
+} 
+
+@media only screen and (max-width: 840px) {
+    
   }
 
-@media only screen and (max-width: 605px) {
+@media only screen and (max-width: 720px) {
     .title{
         font-size: 40px;
         padding: 5vh 0 5vh 0;
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
+    .title{
+        font-size: 35px;
+    }
+
     .randon-letter{
         font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 395px) {
+    .title{
+        font-size: 30px;
+    }
+
+    .randon-letter{
+        font-size: 30px;
     }
 }
