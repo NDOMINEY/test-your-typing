@@ -8,7 +8,7 @@
 }
 
 html{
-    background-color: #C8D3D5
+    background-color: #C8D3D5;
 }
 
 .title{
@@ -44,6 +44,23 @@ html{
     padding-right: 50px;
     font-weight: bold;
     background: radial-gradient(circle, rgba(12,202,74,1) 0%, rgba(164,184,196,1) 100%);
+}
+
+/** button styling **/
+
+.btn {
+	box-shadow: 1px 2px 5px -1px #276873;
+	background-color:#c8d3d5;
+	border-radius:5px;
+	cursor:pointer;
+	padding:15px 26px;
+}
+.btn:hover {
+	background-color:#b3c0c2;
+}
+.btn:active {
+	position:relative;
+	top:1px;
 }
 
 /** Styling for gameselect page **/
