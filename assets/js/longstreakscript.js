@@ -14,7 +14,7 @@ window.onload = runLongStreakGame();
 //back to games link added
 document.getElementById("reset-btn").addEventListener('click', function(){
     window.location.href = 'gameselect.html';
-})
+});
 
 
 /**
@@ -83,7 +83,7 @@ function checkAnswer(keyPressed){
 
     }
 
-    return
+    return;
 }
 
 
@@ -129,19 +129,19 @@ function topScore(){
                 localStorage.setItem('streakHighScore', JSON.stringify(streakHighScore));
 
                 window.location.href = 'gameselect.html';
-            })
+            });
         } else{
             popUpContent.innerHTML = `
                     <br><br>
                     <h2>Good job but no new highscore... </h2>
                     <br><br>
-                `
+                `;
             
             document.getElementById("submit").innerHTML = "Return to games!";
             
             document.getElementById("submit").addEventListener('click',function(){
                 window.location.href = 'gameselect.html';
-            })
+            });
             
         }
 
@@ -156,6 +156,6 @@ function topScore(){
             localStorage.setItem('streakHighScore', JSON.stringify(streakHighScore));
 
             window.location.href = 'gameselect.html';
-        })
+        });
     }
 }
