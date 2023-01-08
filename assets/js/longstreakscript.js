@@ -3,9 +3,6 @@ const key = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o",
 "p","q","r","s","t","u","v","x","w","y","z","0","1","2","3","4","5","6",
 "7","8","9","Tab","Enter","Shift","Delete","Space Bar"];
 
-let startTime = 10;
-let timer = document.getElementsByClassName("count-down")[1];
-let seconds = 0;
 let currentScore = document.getElementsByClassName("current-score")[0];
 let startScore = 0;
 
@@ -25,13 +22,8 @@ document.getElementById("reset-btn").addEventListener('click', function(){
 function runTimedGame(){
     document.getElementsByClassName("randon-letter")[1].innerHTML = randomKey();
 
-    if(startTime > 0){
-        document.addEventListener('keydown', userInput);
+    document.addEventListener('keydown', userInput);
 
-    }else{
-        return
-    }
-    return
 }
 
 /**
@@ -44,14 +36,6 @@ function userInput(event){
         let keyPressed = event.key;
         
         checkAnswer(keyPressed);
-
-        document.getElementsByClassName("randon-letter")[1].innerHTML = randomKey();
-        
-        if(startTime === 0){
-            document.getElementsByClassName("randon-letter")[1].innerHTML = "Game Over";
-            
-            topScore();
-        }
     }
 }
 
@@ -74,18 +58,21 @@ function checkAnswer(keyPressed){
     let answerResponse = document.getElementById("answer_status");
     let preText = document.getElementById("answer_pretext");
 
-    if (startTime !== 0 && document.getElementsByClassName("randon-letter")[1].innerHTML === keyPressed){
+    if (document.getElementsByClassName("randon-letter")[1].innerHTML === keyPressed){
         startScore += 1;
         currentScore.innerHTML = startScore;
         preText.innerHTML = "Last answer was...";
         answerResponse.innerHTML = "CORRECT";
         answerResponse.style.color = 'green';
-    }else if(startTime !== 0 && document.getElementsByClassName("randon-letter")[1].innerHTML !== keyPressed){ 
-        startScore -= 1;
+    }else if(document.getElementsByClassName("randon-letter")[1].innerHTML !== keyPressed){ 
         currentScore.innerHTML = startScore;
         preText.innerHTML = "Last answer was...";
         answerResponse.innerHTML = "INCORRECT";
         answerResponse.style.color = 'red';
+
+        document.getElementsByClassName("randon-letter")[1].innerHTML = "Game Over";
+
+        topScore();
 
     }
 
