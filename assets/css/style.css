@@ -125,4 +125,9 @@ th{
     background-color: #A4B8C4;
     border:5px solid #6E8387;
     border-radius: 5px;
+    text-align: center;
+}
+
+.pop-up > h2 {
+    padding-top: 25px;
 }
