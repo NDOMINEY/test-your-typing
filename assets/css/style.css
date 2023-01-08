@@ -122,6 +122,11 @@ html{
     font-size: 25px;
 }
 
+#thumbs-img{
+    width: 200px;
+    height: 200px;
+}
+
 /* Styling for high scores table */
 
 
