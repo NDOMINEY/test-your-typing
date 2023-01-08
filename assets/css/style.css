@@ -82,6 +82,10 @@ html{
     padding: 25px;
 }
 
+#random{
+    padding: 5px;
+}
+
 .count-down{
     font-size: 25px;
 }
@@ -164,4 +168,10 @@ th{
         border:5px solid #6E8387;
         border-radius: 5px;
     }
-}   
+} 
+
+@media only screen and (max-width: 400px) {
+    .randon-letter{
+        font-size: 35px;
+    }
+}
