@@ -8,7 +8,7 @@ let startScore = 0;
 
 
 //run the game on screen load
-window.onload = runTimedGame();
+window.onload = runLongStreakGame();
 
 //back to games link added
 document.getElementById("reset-btn").addEventListener('click', function(){
@@ -19,10 +19,12 @@ document.getElementById("reset-btn").addEventListener('click', function(){
 /**
  * Runs game cycle
 */
-function runTimedGame(){
+function runLongStreakGame(){
     document.getElementsByClassName("randon-letter")[1].innerHTML = randomKey();
 
-    document.addEventListener('keydown', userInput);
+    if(startScore >= 0){
+        document.addEventListener('keydown', userInput);
+    }
 
 }
 
@@ -37,6 +39,9 @@ function userInput(event){
         
         checkAnswer(keyPressed);
     }
+
+    runLongStreakGame();
+
 }
 
 /**
@@ -64,6 +69,7 @@ function checkAnswer(keyPressed){
         preText.innerHTML = "Last answer was...";
         answerResponse.innerHTML = "CORRECT";
         answerResponse.style.color = 'green';
+
     }else if(document.getElementsByClassName("randon-letter")[1].innerHTML !== keyPressed){ 
         currentScore.innerHTML = startScore;
         preText.innerHTML = "Last answer was...";
