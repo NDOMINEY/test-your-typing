@@ -24,6 +24,7 @@ html{
     margin-left: 20%;
     margin-right: 20%;
     padding: 25px;
+    min-height: 70vh;
     text-align: center;
     background-color: #A4B8C4;
     border:5px solid #6E8387;
@@ -50,7 +51,7 @@ html{
 .game-mode{
     display: inline-block;
     width: 30%;
-    height: 70vh;
+    min-height: 70vh;
     vertical-align: top;
     margin-left: 13.33%;
     padding: 5% 25px 0px 25px;
@@ -68,7 +69,7 @@ html{
     top: 20vh;
     left: 20vw;
     width: 60%;
-    height: 70vh;
+    min-height: 70vh;
     padding: 25px;
     text-align: center;
     background-color: #A4B8C4;
@@ -123,7 +124,7 @@ th{
     top: 20vh;
     left: 20vw;
     width: 60%;
-    height: 70vh;
+    min-height: 70vh;
     background-color: #A4B8C4;
     border:5px solid #6E8387;
     border-radius: 5px;
@@ -142,9 +143,25 @@ th{
     }
   }
 
-  @media only screen and (max-width: 605px) {
+@media only screen and (max-width: 605px) {
     .title{
         font-size: 25px;
         padding: 5vh 0 5vh 0;
     }
-  }
+}
+
+@media only screen and (max-width: 950px) {
+    .game-mode{    
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 25px;
+        padding: 25px;
+        width: 60%;
+        min-height: 0vh;
+        vertical-align: top;
+        text-align: center;
+        background-color: #A4B8C4;
+        border:5px solid #6E8387;
+        border-radius: 5px;
+    }
+}   
