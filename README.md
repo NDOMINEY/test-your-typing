@@ -1,5 +1,11 @@
 # Test Your Typing
 
+Test Your Typing is a interactive online tool that aims to enable users to practice and improve their touch typing skills. The aim is to deliver this in a fun and self competive manner to encourage practice!
+
+Two games modes are provided to in the form of a time and longest streak challenge.
+
+![Responsive Mockup](documentation/mockup.png)
+
 
 ## Tabel of Contents
 + [Design](#design "Design")
