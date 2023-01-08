@@ -190,6 +190,10 @@ th{
         border:5px solid #6E8387;
         border-radius: 5px;
     }
+
+    #keys {
+        width: 75%;
+    }
 } 
 
 @media only screen and (max-width: 400px) {
