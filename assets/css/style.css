@@ -13,9 +13,9 @@ html{
 
 .title{
     width: 100%;
-    padding: 25px;
+    padding: 5vh;
     text-align: center;
-    font-size: 75px;
+    font-size: 10vh;
     color: black;
     text-decoration: none;
 }
@@ -50,10 +50,9 @@ html{
 .game-mode{
     display: inline-block;
     width: 30%;
-    height: 500px;
+    height: 70vh;
     vertical-align: top;
     margin-left: 13.33%;
-    margin-top: 25px;
     padding: 5% 25px 0px 25px;
     text-align: center;
     background-color: #A4B8C4;
@@ -64,10 +63,13 @@ html{
 /** Game Space Styling **/
 
 .game-space{
-    margin-left: 20%;
-    margin-right: 20%;
-    padding: 25px;
+    position: fixed;
+    z-index: 1;
+    top: 20vh;
+    left: 20vw;
+    width: 60%;
     height: 70vh;
+    padding: 25px;
     text-align: center;
     background-color: #A4B8C4;
     border:5px solid #6E8387;
@@ -118,10 +120,10 @@ th{
     display: none;
     position: fixed;
     z-index: 1;
+    top: 20vh;
     left: 20vw;
-    top: 100px;
     width: 60%;
-    height: 80vh;
+    height: 70vh;
     background-color: #A4B8C4;
     border:5px solid #6E8387;
     border-radius: 5px;
