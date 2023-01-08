@@ -92,6 +92,7 @@ function topScore(){
 
     //set required variables
 
+    let gameSpace = document.getElementsByClassName("game-space")[0];
     let popUp = document.getElementById("pop-up"); //container for pop-up//set required variables
     let popUpContent = document.getElementById("content");
 
@@ -104,6 +105,8 @@ function topScore(){
 
     console.log(retrievedScore);
 
+    //hides game space
+    gameSpace.style.display = "none";
     //bring pop up into view
     popUp.style.display = "block";
    

@@ -64,8 +64,8 @@ html{
 /** Game Space Styling **/
 
 .game-space{
+    display: block;
     position: fixed;
-    z-index: 1;
     top: 20vh;
     left: 20vw;
     width: 60%;

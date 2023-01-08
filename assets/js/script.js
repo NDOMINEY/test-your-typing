@@ -133,6 +133,7 @@ function topScore(){
 
     //set required variables
 
+    let gameSpace = document.getElementsByClassName("game-space")[0];
     let popUp = document.getElementById("pop-up"); //container for pop-up//set required variables
     let popUpContent = document.getElementById("content");
 
@@ -143,6 +144,8 @@ function topScore(){
     let retrievedScore = localStorage.getItem('highScore'); //retrieves the data held in localStorage
     let stringScoreReturn = JSON.parse(retrievedScore); //return string value of localStorage
 
+    //hides game space
+    gameSpace.style.display = "none";
     //bring pop up into view
     popUp.style.display = "block";
    
