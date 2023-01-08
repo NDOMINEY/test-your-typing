@@ -20,22 +20,6 @@ document.getElementById("reset-btn").addEventListener('click', function(){
 
 
 /**
- * count down timer
-*/
-document.addEventListener('keydown', countDown, {once : true});
-
-function countDown(){
-    setTimeout(function(){
-        startTime -= 1;
-        timer.innerHTML = startTime;
-        seconds++;
-        if (seconds < 10) {           //  if the counter > 0, call the loop function
-            countDown();             //  ..  again which will trigger another 
-          }
-    }, 1000);
-}
-
-/**
  * Runs game cycle
 */
 function runTimedGame(){
@@ -43,24 +27,6 @@ function runTimedGame(){
 
     if(startTime > 0){
         document.addEventListener('keydown', userInput);
-
-        /*
-        function userInput(event){
-        
-            if(event.type === 'keydown'){
-                let keyPressed = event.key;
-                
-                checkAnswer(keyPressed);
-
-                document.getElementsByClassName("randon-letter")[1].innerHTML = randomKey();
-                
-                if(startTime === 0){
-                    document.getElementsByClassName("randon-letter")[1].innerHTML = "Game Over";
-                    
-                    topScore();
-                }
-            }
-        }*/
 
     }else{
         return
