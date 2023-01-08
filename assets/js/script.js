@@ -17,7 +17,7 @@ window.onload = runTimedGame();
 //back to games link added
 document.getElementById("reset-btn").addEventListener('click', function(){
     window.location.href = 'gameselect.html';
-})
+});
 
 
 /**
@@ -46,9 +46,9 @@ function runTimedGame(){
         document.addEventListener('keydown', userInput);
 
     }else{
-        return
+        return;
     }
-    return
+    return;
 }
 
 /**
@@ -106,7 +106,7 @@ function checkAnswer(keyPressed){
 
     }
 
-    return
+    return;
 }
 
 
@@ -150,19 +150,19 @@ function topScore(){
                 localStorage.setItem('highScore', JSON.stringify(highScore));
 
                 window.location.href = 'gameselect.html';
-            })
+            });
         } else{
             popUpContent.innerHTML = `
                     <br><br>
                     <h2>Good job but no new highscore... </h2>
                     <br><br>
-                `
+                `;
             
             document.getElementById("submit").innerHTML = "Return to games!";
 
             document.getElementById("submit").addEventListener('click',function(){
                 window.location.href = 'gameselect.html';
-            })
+            });
             
         }
 
@@ -177,6 +177,6 @@ function topScore(){
             localStorage.setItem('highScore', JSON.stringify(highScore));
 
             window.location.href = 'gameselect.html';
-        })
+        });
     }
 }
