@@ -63,6 +63,17 @@ html{
 	top:1px;
 }
 
+.home-btn{
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    margin: 5px 0 5px 0;
+}
+
+#home {
+    text-align: center;
+}
+
 /** Styling for gameselect page **/
 
 .game-mode{
