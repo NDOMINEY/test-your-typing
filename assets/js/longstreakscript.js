@@ -50,7 +50,7 @@ function userInput(event){
 */
 function randomKey(){
     //generate random number for key array index
-    let i = Math.floor(Math.random() * 40);
+    let i = Math.floor(Math.random() * 38);
     //returns random index from the key array
     return key[i];
 }
