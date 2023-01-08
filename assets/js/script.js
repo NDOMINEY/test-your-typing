@@ -4,7 +4,7 @@ const key = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o",
 "7","8","9","Enter","Shift","Space Bar"];
 
 
-let startTime = 10;
+let startTime = 40;
 let timer = document.getElementsByClassName("count-down")[1];
 let seconds = 0;
 let currentScore = document.getElementsByClassName("current-score")[0];
@@ -30,7 +30,7 @@ function countDown(){
         startTime -= 1;
         timer.innerHTML = startTime;
         seconds++;
-        if (seconds < 10) {           //  if the counter > 0, call the loop function
+        if (seconds < 40) {           //  if the counter > 0, call the loop function
             countDown();             //  ..  again which will trigger another 
           }
     }, 1000);
@@ -44,24 +44,6 @@ function runTimedGame(){
 
     if(startTime > 0){
         document.addEventListener('keydown', userInput);
-
-        /*
-        function userInput(event){
-        
-            if(event.type === 'keydown'){
-                let keyPressed = event.key;
-                
-                checkAnswer(keyPressed);
-
-                document.getElementsByClassName("randon-letter")[1].innerHTML = randomKey();
-                
-                if(startTime === 0){
-                    document.getElementsByClassName("randon-letter")[1].innerHTML = "Game Over";
-                    
-                    topScore();
-                }
-            }
-        }*/
 
     }else{
         return
