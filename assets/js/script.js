@@ -171,9 +171,13 @@ function topScore(){
             })
         } else{
             popUpContent.innerHTML = `
+                    <br><br>
                     <h2>Good job but no new highscore... </h2>
                     <br><br>
                 `
+            
+            document.getElementById("submit").innerHTML = "Return to games!";
+
             document.getElementById("submit").addEventListener('click',function(){
                 window.location.href = 'gameselect.html';
             })
