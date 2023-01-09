@@ -8,6 +8,7 @@ Two games modes are provided to in the form of a time and longest streak challen
 
 
 ## Tabel of Contents
++ [Requirements](#requirements "Requirements")
 + [Design](#design "Design")
   + [Wireframes](#wireframes "Wireframes")
   + [Colour Scheme](#colour-scheme "Colour Scheme")
@@ -27,6 +28,8 @@ Two games modes are provided to in the form of a time and longest streak challen
 + [Credits](#credits "Credits")
   + [Content](#content "Content")
   + [Media](#media "Media")
+
+## Requirements
 
 ## Design
 
