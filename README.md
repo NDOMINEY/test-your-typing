@@ -72,7 +72,7 @@ There are two images in the website, I have listed their sources below.
 
 #### Title and Home Navigation:
 
-Present at the top of every page is the Title header, this is linked to return the user back to the home page. On the game select, time challenge and long streak challenge pages a home icon has been added to this. This is to further communicate to the user that they are able to use this as a link to the home page at any stage of their user journey.
+Present at the top of every page is the title header, this is linked to return the user back to the home page. On the game select, time challenge and long streak challenge pages a home icon has been added to this. This is to further communicate to the user that they are able to use this as a link to the home page at any stage of their user journey.
 
 Title on home page -
 
@@ -82,6 +82,13 @@ Title on all other pages -
 
 ![Title on all other pages](documentation/title-other.png)
 
+#### Landing Page:
+
+The landing page of the website, conveys the clear goal of the website to practice typing in a game mode. This is done with the opening line, 'Let the games begin!'. After which is a brief explanation and the user is presented with the option to continue straight to the games.
+
+Further down their is information on type touching, a supporting image and a link to further external information. The link opens up in a new tab so the users access to the site remains.
+
+![Landing information](documentation/landing-page.png)
 
 ### Future Features:
 
