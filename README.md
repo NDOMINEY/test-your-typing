@@ -57,7 +57,17 @@ Please see below a table showing the desired requirements for Test Your Typing, 
 
 ### Typography:
 
+- Special Elite was used as the font for the website, this was chosen to provide a type writer feel to compliment the typing theme.
+- The font style was sourced from [Google Fonts](https://fonts.google.com/)
+
 ### Imagery:
+
+There are two images in the website, I have listed their sources below.
+
+- On the home page there is a image of a keyboard, this was sourced from [Wikipedia](https://en.wikipedia.org/wiki/Touch_typing#/media/File:QWERTY-home-keys-position.svg)
+- On the high score submission section there is a image of a thumbs up, this was created using tools from [Shutterstock](https://www.shutterstock.com/)
+
+
 
 ### Media:
 
