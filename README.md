@@ -36,6 +36,11 @@ Two games modes are provided to in the form of a time and longest streak challen
 
 ### Colour Scheme:
 
+- A neutral colour scheme was chosen to enable it to not distract from the games, with a highlight colour for external links.
+- The colour scheme was generated from [Coolers](https://coolors.co/c8d3d5-a4b8c4-6e8387-0cca4a)
+
+![Colour Scheme](documentation/colour-scheme.png)
+
 ### Typography:
 
 ### Imagery:
