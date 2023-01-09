@@ -31,6 +31,17 @@ Two games modes are provided to in the form of a time and longest streak challen
 
 ## Requirements
 
+Please see below a table showing the desired requirements for Test Your Typing, with a matrix for importance of feature and feasibility of implementation.
+
+|  <br>Requirement                                       |  <br>Importance  |  <br>Viability/Feasibility  |
+|--------------------------------------------------------|------------------|-----------------------------|
+|  <br>Provide Information about touch typing            |  <br>5           |  <br>5                      |
+|  <br>Provide game style practice                       |  <br>5           |  <br>5                      |
+|  <br>Enable high scores to be recorded with user name  |  <br>5           |  <br>5                      |
+|  <br>Provide a choice of game modes                    |  <br>4           |  <br>5                      |
+|  <br>Enable high scores to be reset                    |  <br>3           |  <br>3                      |
+
+
 ## Design
 
 ### Wireframes:
