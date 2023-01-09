@@ -264,6 +264,22 @@ Please expand 'Functional Test Cases' below to see a breakdown of the tests carr
 
 ### Validator Testing
 
+- HTML
+  - No errors found when tested through official W3C Validator
+    - Home Page [W3C Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fndominey.github.io%2Ftest-your-typing%2Findex.html)
+    - Game Select Page [W3C Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fndominey.github.io%2Ftest-your-typing%2Fgameselect.html)
+    - Time Challenge Page [W3C Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fndominey.github.io%2Ftest-your-typing%2Ftimechallenge.html)
+    - Long Streak Challenge Page [W3C Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fndominey.github.io%2Ftest-your-typing%2Flongstreak.html)
+
+- CSS
+  - No errors found when tested through official [Jigsaw validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fndominey.github.io%2Ftest-your-typing%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+- JavaScript
+  - All scripts tested with no errors through [JS Hint](https://jshint.com/)
+  - The below configuration was used in JS Hint
+
+![JS Hint Configurations](documentation/jshint-configuration.png) <br>
+
 
 ### Unfixed Bugs
 - No known bugs
