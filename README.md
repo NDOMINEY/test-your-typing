@@ -314,14 +314,14 @@ To create an isolated version of the project, you may add a branch off of main. 
 
 ### Content
 To create the function that allows high score to be scored locally, the below how to's, code examples, and forums were used to form the implemented code.
-- ![Stack Overflow - storing JSON data in browser memory](https://stackoverflow.com/questions/18913079/storing-json-data-in-browser-memory/18913096)
-- ![Apple - Key-Value Storage, Client Side Browser Storage](https://developer.apple.com/library/archive/documentation/iPhone/Conceptual/SafariJSDatabaseGuide/Name-ValueStorage/Name-ValueStorage.html)
-- ![Stack Overflow - Object to an Array](https://stackoverflow.com/questions/38824349/how-to-convert-an-object-to-an-array-of-key-value-pairs-in-javascript)
-- ![Michael Karén - How to Save High Scores in Local Storage](https://michael-karen.medium.com/how-to-save-high-scores-in-local-storage-7860baca9d68)
-- ![James Q Quick - Youtube tutorial 'Build a Quiz App (8) - Save High Scores in Local Storage'](https://www.youtube.com/watch?v=DFhmNLKwwGw)
+- [Stack Overflow - storing JSON data in browser memory](https://stackoverflow.com/questions/18913079/storing-json-data-in-browser-memory/18913096)
+- [Apple - Key-Value Storage, Client Side Browser Storage](https://developer.apple.com/library/archive/documentation/iPhone/Conceptual/SafariJSDatabaseGuide/Name-ValueStorage/Name-ValueStorage.html)
+- [Stack Overflow - Object to an Array](https://stackoverflow.com/questions/38824349/how-to-convert-an-object-to-an-array-of-key-value-pairs-in-javascript)
+- [Michael Karén - How to Save High Scores in Local Storage](https://michael-karen.medium.com/how-to-save-high-scores-in-local-storage-7860baca9d68)
+- [James Q Quick - Youtube tutorial 'Build a Quiz App (8) - Save High Scores in Local Storage'](https://www.youtube.com/watch?v=DFhmNLKwwGw)
 
 
 ### Media
 
-Keyboard image - ![Wikipedia - Touch Typing](https://en.wikipedia.org/wiki/Touch_typing#/media/File:QWERTY-home-keys-position.svg) <br>
-Tool to create Thumbs Up Image - ![Shutterstock](https://www.shutterstock.com/)
+Keyboard image - [Wikipedia - Touch Typing](https://en.wikipedia.org/wiki/Touch_typing#/media/File:QWERTY-home-keys-position.svg) <br>
+Tool to create Thumbs Up Image - [Shutterstock](https://www.shutterstock.com/)
