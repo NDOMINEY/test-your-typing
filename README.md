@@ -14,7 +14,6 @@ Two games modes are provided to in the form of a time and longest streak challen
   + [Colour Scheme](#colour-scheme "Colour Scheme")
   + [Typography](#typography "Typography")
   + [Imagery](#imagery "Imagery")
-  + [Media](#media "Media")
 + [Features](#features "Features")
   + [Existing Features](#existing-features "Existing Features")
 + [Testing](#testing "Testing")
@@ -68,6 +67,21 @@ There are two images in the website, I have listed their sources below.
 - On the high score submission section there is a image of a thumbs up, this was created using tools from [Shutterstock](https://www.shutterstock.com/)
 
 ## Features
+
+### Existing Features
+
+#### Title and Home Navigation:
+
+Present at the top of every page is the Title header, this is linked to return the user back to the home page. On the game select, time challenge and long streak challenge pages a home icon has been added to this. This is to further communicate to the user that they are able to use this as a link to the home page at any stage of their user journey.
+
+Title on home page -
+
+![Title on home page](documentation/title-home.png)
+
+Title on all other pages -
+
+![Title on all other pages](documentation/title-other.png)
+
 
 ### Future Features:
 
