@@ -50,7 +50,7 @@ Two games modes are provided to in the form of a time and longest streak challen
 
 ### User Testing
 
-|  <br>User Case  |  <br>Description                                                                                                |  <br>Links to relevant test cases                                                    |  <br>Result  |  <br>Comments                                                                |
+|  <br>User Case  |  <br>Description                                                                                                |  <br>Relevant test cases                                                    |  <br>Result  |  <br>Comments                                                                |
 |-----------------|-----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|--------------|------------------------------------------------------------------------------|
 |  <br>UC-001     |  <br>As a user I want to be able to learn about touch typing and gain further information.                      |  <br>TC-002                                                                          |  <br>Pass    |  <br>                                                                        |
 |  <br>UC-002     |  <br>As a user I want to practice to improve the speed of my touch typing.                                      |  <br>TC-004, TC-011                                                                  |  <br>Pass    |  <br>                                                                        |
