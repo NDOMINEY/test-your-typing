@@ -32,6 +32,8 @@ Two games modes are provided to in the form of a time and longest streak challen
 
 ### Wireframes:
 
+- Please find link to [Full Screen Wireframe](documentation/full-wireframe.pdf)
+
 ### Colour Scheme:
 
 ### Typography:
