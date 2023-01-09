@@ -108,7 +108,6 @@ The Time Challenge game presents the user with a starting key to press and a 40 
 
 ![Time Challenge Start](documentation/time-challenge-start.png)
 
-
 Once in progress the timer will start to count down, and each time a key is pressed a new random key is then generated for the user. With each correct key the score increases by 1 and with each incorrect key it decreases by 1. At the end of the game, the final score is then used to compare to the current highest score.
 
 To communicate to the player whether they have clicked the correct key, ongoing feed back in given directly under the random key generation.
@@ -120,6 +119,14 @@ Correct score response -
 Incorrect score response - 
 
 ![Incorrect Input](documentation/time-incorrect-input.png)
+
+#### Long Streak Challenge:
+
+The Long Streak Challenge presents the user with continuous random keys until the user selects an incorrect key. For each correct key the score increases by one and then the game ends when an incorrect key is pushed.
+
+The layout of the game is in the same format as the Time Challenge to keep consistent design throughout. As such, game instruction is at the top and there is a return to games selection button at the bottom.
+
+![Long Streak Challenge Start](documentation/long-streak-start.png)
 
 ### Future Features:
 
