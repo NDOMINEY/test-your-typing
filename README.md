@@ -146,6 +146,9 @@ If the user doesn't achieve a new high score the following becomes visible. This
 
 ### Future Features:
 
+A lower level requirement was a function to clear the high scores, this would enable the user to restart if they wish. In future development of the site, this should be added to the game select page where the high scores are displayed.
+
+This could be done in the form of a button that when clicked will clear the local storage.
 
 ## Testing
 
