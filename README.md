@@ -17,6 +17,7 @@ Two games modes are provided to in the form of a time and longest streak challen
 + [Features](#features "Features")
   + [Existing Features](#existing-features "Existing Features")
 + [Testing](#testing "Testing")
+  + [Development Process](#development-process "Development Process")
   + [User Testing](#user-testing "User Testing")
   + [Functional Testing](#functional-testing "Functional Testing")
   + [Validator Testing](#validator-testing "Validator Testing")
@@ -152,8 +153,56 @@ This could be done in the form of a button that when clicked will clear the loca
 
 ## Testing
 
+### Development Process
 
-### User Testing
+
+Throughout the development process, each feature was tested on a local server to check that the code added was working as intended. This then resulted in realtime changes before commiting the new features. Below is a list of bugs that were discussed through development.
+
+#### Random Letter Generator
+
+- The initial array for the random letter generator included 'tab' and 'delete' keys. In the testing process, it was discovered that if you pushed the tab key the title element of the page was selected. If this was then followed by 'enter' it would exit the user from the game and return them to the home page. <br>
+Additionally, it came to light that for MAC users, a delete key is not present and therefore restricted accessibility to windows users. <br>
+As a result, both of these key options were removed from the array.
+
+- When using the games, the random letter generator on occassion would present 'undefined'. Upon investigation it was found that this was due to the random number function that was used to randomly select from the keys array. It was not taken into account that array indexing starts with a '0' and therefore the random number selector had to be one less than the total strings present. <br>
+Upon adjusting the number generator, 'undefined' no longer was generated in game play.
+
+#### Time Challenge - Count Down
+
+- After first implementing the count down timer in full game testing, it was discovered that every time a key was clicked the timer function was called. This resulted in the timer decreasing and increasingly fast rates. <br>
+This was due to the event listener that was added to key push down. To resolve this issue, `{once : true}` was added to ensure that it could only be activated once.
+
+#### Reading Exisiting High Score
+
+- Within the `topScore()` function, the local storaged is retrived to compare the data to the score of the game. Initially, when this was implemented it caused an error as the if statement was unable to read the value of the key pair. Upon further investigation, it was discovered that due to the format of the data pulled via JSON it was not compatibly to check against a number.<br>
+Upon further research, a second step was added to format the data into a string which enabled the function to select the number value and change its data type.
+`Object.keys(stringScoreReturn).map((key) => [Number(key), stringScoreReturn[key]])`
+`if(parseInt(score.innerHTML) > parseInt(number)){`
+
+#### Storing Seperate High Scores
+
+- After the Time Challenge script was completed, the code was copied over to a new script to run the Long Streak Challenge. This was done as there were multiple functions that are required for both games. After making the required alternations for the new game mode, game run through was tested.<br>
+It was discoved that when one game achieve a new high score, it would overwrite the others. This became apparent when checking the high scores displayed on the game select screen and that both were showing the same data. <br>
+Upon further investigation and research into local storage, this was because the `topScore()` function was using the same key when sending the data to the local storage. To resolve this issue, the function was altered in the Long Streak Challenge script to assign a different key to the data.<br>
+This then resolved the issue and they both had independent storage of their respective highest scores. The solution was tested with the high score display on the game select page.
+
+### Usability Testing
+
+- All pages are responsive to multiple screen sizes, main screen sizes designed for ipad sizes and above due to nature of game for touch typing.
+- Title link to home page works on all pages.
+- All buttons links to appropriate destinations.
+- External links open in new browser tabs.
+- Images hold alternatives to for accessibility.
+- Color scheme appropriate for accessibility.
+- Website checked on multiple browsers including chrome, firefox and safari.
+- Lighthouse run on each page to check for performace, accessibility, best practice and SEO. All tests returned positive results which are shown below in the link to full reports.
+
+  - ![index.html Light House Report](documentation/index-lighthouse.pdf) <br>
+  - ![gameselect.html Light House Report](documentation/gameselect-lighthouse.pdf) <br>
+  - ![timechallenge.html Light House Report](documentation/timechallenge-lighthouse.pdf) <br>
+  - ![longstreak.html Light House Report](documentation/long%20streak-lighthouse.pdf) <br>
+
+### User Requirement Testing
 
 |  <br>User Case  |  <br>Description                                                                                                |  <br>Relevant test cases                                                    |  <br>Result  |  <br>Comments                                                                |
 |-----------------|-----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|--------------|------------------------------------------------------------------------------|
