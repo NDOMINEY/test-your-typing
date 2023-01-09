@@ -102,6 +102,22 @@ Each section illustrates it's independent highest score that is saved in local s
 
 ![High Score Example](documentation/score-example.png)
 
+#### Time Challenge:
+
+The Time Challenge game presents the user with a starting key to press and a 40 seconds timer. At the top, it is instructed to the user that the game commences on the first key press.
+
+Once in progress the timer will start to count down, and each time a key is pressed a new random key is then generated for the user. With each correct key the score increases by 1 and with each incorrect key it decreases by 1. At the end of the game, the final score is then used to compare to the current highest score.
+
+To communicate to the player whether they have clicked the correct key, ongoing feed back in given directly under the random key generation.
+
+Correct score response -
+
+![Correct Input](documentation/time-correct-input.png)
+
+Incorrect score response - 
+
+![Incorrect Input](documentation/time-incorrect-input.png)
+
 ### Future Features:
 
 
