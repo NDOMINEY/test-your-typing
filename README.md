@@ -220,6 +220,11 @@ To ensure the website meets the expectations of the user, please see below table
 
 ### Functional Testing
 
+Upon deployment through github pages, a total of 25 functional tests were carried out. On items that were in scope, this gave 100% coverage with 100% pass rate.
+
+Elements that were out of scope included lower level requirement of a feature to reset the high scores. This will be able to be included in testing when the future feature is added.
+
+Please expand 'Functional Test Cases' below to see a breakdown of the tests carried out.
 
 <details>
 
@@ -254,6 +259,7 @@ To ensure the website meets the expectations of the user, please see below table
 |  <br>TC-024     |  <br>Long Streak Page - Upon game ending, if no high score is achieved, a pop up appears to inform the user     |  <br>At the end of the game, the score is lower than the one held in Local Storage               |  <br>1. Active page is longstreak.html <br>2. Complete game with final score being lower than currently stored <br>3. Check pop up appears to inform the user no new high score achieve     |  <br>Pass    |  <br>          |
 |  <br>TC-025     |  <br>Long Streak Page - No high score pop up allows the user to return to game select page.                     |  <br>The no high score pop up for Long Streak Challenge is open                                  |  <br>1. Click on ‘Return to Games!’ Button <br>2.Check that active page is now gameselect.html                                                                                              |  <br>Pass    |  <br>          |
 </details>
+<br>
 
 
 ### Validator Testing
