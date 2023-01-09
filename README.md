@@ -17,7 +17,7 @@ Two games modes are provided to in the form of a time and longest streak challen
 + [Features](#features "Features")
   + [Existing Features](#existing-features "Existing Features")
 + [Testing](#testing "Testing")
-  + [Usability Testing](#usability-testing "Usability Testing")
+  + [User Testing](#user-testing "User Testing")
   + [Functional Testing](#functional-testing "Functional Testing")
   + [Validator Testing](#validator-testing "Validator Testing")
   + [Unfixed Bugs](#unfixed-bugs "Unfixed Bugs")
