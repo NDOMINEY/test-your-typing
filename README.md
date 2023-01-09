@@ -7,7 +7,7 @@ Two games modes are provided to in the form of a time and longest streak challen
 ![Responsive Mockup](documentation/mockup.png)
 
 
-## Tabel of Contents
+## Table of Contents
 + [Requirements](#requirements "Requirements")
 + [Design](#design "Design")
   + [Wireframes](#wireframes "Wireframes")
