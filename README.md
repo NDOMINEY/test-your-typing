@@ -48,7 +48,17 @@ Two games modes are provided to in the form of a time and longest streak challen
 ## Testing
 
 
-### Usability Testing
+### User Testing
+
+|  <br>User Case  |  <br>Description                                                                                                |  <br>Links to relevant test cases                                                    |  <br>Result  |  <br>Comments                                                                |
+|-----------------|-----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|--------------|------------------------------------------------------------------------------|
+|  <br>UC-001     |  <br>As a user I want to be able to learn about touch typing and gain further information.                      |  <br>TC-002                                                                          |  <br>Pass    |  <br>                                                                        |
+|  <br>UC-002     |  <br>As a user I want to practice to improve the speed of my touch typing.                                      |  <br>TC-004, TC-011                                                                  |  <br>Pass    |  <br>                                                                        |
+|  <br>UC-003     |  <br>As a user I want to test the accuracy of my typing to see how long I can type for before making an error.  |  <br>TC-005, TC-019                                                                  |  <br>Pass    |  <br>                                                                        |
+|  <br>UC-004     |  <br>As a user I want to be able to be able to see a record of my highest scores.                               |  <br>TC-006, TC-007, TC-008, TC-009, TC-013, TC-014, TC-015, TC-021, TC-022, TC-023  |  <br>Pass    |  <br>                                                                        |
+|  <br>UC-005     |  <br>As a user I wish to be able to reset my high scores                                                        |  <br>                                                                                |  <br>Fail    |  <br>A lower level requirement that will be implemented as a future feature  |
+|  <br>UC-006     |  <br>As a user I wish to be able to return to the home screen at any stage.                                     |  <br>TC-003, TC-010, TC-018                                                          |  <br>Pass    |  <br>                                                                        |
+|  <br>UC-007     |  <br>As a user I wish to be able to return to the game selection at any stage.                                  |  <br>TC-001, TC-012, TC-020                                                          |  <br>Pass    |  <br>                                                                        |
 
 
 ### Functional Testing
