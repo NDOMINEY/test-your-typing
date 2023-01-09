@@ -104,7 +104,10 @@ Each section illustrates it's independent highest score that is saved in local s
 
 #### Time Challenge:
 
-The Time Challenge game presents the user with a starting key to press and a 40 seconds timer. At the top, it is instructed to the user that the game commences on the first key press.
+The Time Challenge game presents the user with a starting key to press and a 40 seconds timer. At the top, it is instructed to the user that the game commences on the first key press. There is also a return to games button so the user can exit at any stage.
+
+![Time Challenge Start](documentation/time-challenge-start.png)
+
 
 Once in progress the timer will start to count down, and each time a key is pressed a new random key is then generated for the user. With each correct key the score increases by 1 and with each incorrect key it decreases by 1. At the end of the game, the final score is then used to compare to the current highest score.
 
