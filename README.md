@@ -205,6 +205,8 @@ This then resolved the issue and they both had independent storage of their resp
 
 ### User Requirement Testing
 
+To ensure the website meets the expectations of the user, please see below table of user cases which summarises whether they pass and also which test case they relate to.
+
 |  <br>User Case  |  <br>Description                                                                                                |  <br>Relevant test cases                                                    |  <br>Result  |  <br>Comments                                                                |
 |-----------------|-----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|--------------|------------------------------------------------------------------------------|
 |  <br>UC-001     |  <br>As a user I want to be able to learn about touch typing and gain further information.                      |  <br>TC-002                                                                          |  <br>Pass    |  <br>                                                                        |
