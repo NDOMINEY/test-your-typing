@@ -128,6 +128,22 @@ The layout of the game is in the same format as the Time Challenge to keep consi
 
 ![Long Streak Challenge Start](documentation/long-streak-start.png)
 
+#### Assessment of Highest Score:
+
+For each game there is independent storage of the ongoing highest score. At the end of the game one of two displays become visible to the user.
+
+- Option 1 - New High Score
+
+If the user achieves a new high score, or the first score recorded, the following becomes visible. It informs the user and provides them the ability to add their name to the score and submit it to be saved. Upon submission the user is then returned to the game selection page.
+
+![High Score Submission](documentation/new-high-score.png)
+
+- Option 2 - No New High Score
+
+If the user doesn't achieve a new high score the following becomes visible. This informs the user and then gives them a button to return back to the game selection.
+
+![No New High Score Submission](documentation/no-new-high-score.png)
+
 ### Future Features:
 
 
