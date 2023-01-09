@@ -90,6 +90,18 @@ Further down their is information on type touching, a supporting image and a lin
 
 ![Landing information](documentation/landing-page.png)
 
+#### Game Selection:
+
+To provide different approaches for the user to test and practice their typing skills, two different game modes are available. From the landing page, the users progression is to game selection.
+
+Both game options are layed out in the same structure to ensure continuity and ease for user reading. Each game mode is enclosed in its own container, with clear buttons to select the game.
+
+![Game Selection](documentation/game-selection.png)
+
+Each section illustrates it's independent highest score that is saved in local storage. Please see example below -
+
+![High Score Example](documentation/score-example.png)
+
 ### Future Features:
 
 
