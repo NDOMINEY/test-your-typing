@@ -86,7 +86,7 @@ Title on all other pages -
 
 The landing page of the website, conveys the clear goal of the website to practice typing in a game mode. This is done with the opening line, 'Let the games begin!'. After which is a brief explanation and the user is presented with the option to continue straight to the games.
 
-Further down their is information on type touching, a supporting image and a link to further external information. The link opens up in a new tab so the users access to the site remains.
+Further down there is information on type touching, a supporting image and a link to further external information. The link opens up in a new tab so the users access to the site remains.
 
 ![Landing information](documentation/landing-page.png)
 
