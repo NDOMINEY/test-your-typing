@@ -67,10 +67,6 @@ There are two images in the website, I have listed their sources below.
 - On the home page there is a image of a keyboard, this was sourced from [Wikipedia](https://en.wikipedia.org/wiki/Touch_typing#/media/File:QWERTY-home-keys-position.svg)
 - On the high score submission section there is a image of a thumbs up, this was created using tools from [Shutterstock](https://www.shutterstock.com/)
 
-
-
-### Media:
-
 ## Features
 
 ### Future Features:
